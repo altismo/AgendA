@@ -15,6 +15,7 @@ import { PerfilPage } from '../pages/sidemenu/perfil/perfil';
 import { PainelPage } from '../pages/sidemenu/painel/painel';
 import { SairPage } from '../pages/sidemenu/sair/sair';
 import { InicioPage } from '../pages/inicio/inicio';
+import { RecPage } from '../pages/esquecisenha/esquecisenha';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { InicioPage } from '../pages/inicio/inicio';
     PerfilPage,
     SairPage,
     InicioPage,
+    RecPage,
   ],
   imports: [
     NgCalendarModule,
@@ -44,6 +46,7 @@ import { InicioPage } from '../pages/inicio/inicio';
     PainelPage,
     SairPage,
     InicioPage,
+    RecPage,
   ],
   providers: [
     StatusBar,

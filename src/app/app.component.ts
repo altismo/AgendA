@@ -10,6 +10,8 @@ import { MeusPage } from '../pages/sidemenu/meus/meus';
 import { PerfilPage } from '../pages/sidemenu/perfil/perfil';
 import { PainelPage } from '../pages/sidemenu/painel/painel';
 import { InicioPage } from '../pages/inicio/inicio';
+import { RecPage } from '../pages/esquecisenha/esquecisenha';
+
 @Component({
   templateUrl: 'app.html'
 })

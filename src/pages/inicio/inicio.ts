@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { PainelPage } from '../sidemenu/painel/painel';
+import { RecPage } from '../esquecisenha/esquecisenha';
 
 /**
  * Generated class for the InicioPage page.
@@ -36,5 +38,13 @@ export class InicioPage {
       this.type = 'password';
     }
   }
-}
 
+  login() {
+    this.navCtrl.push(PainelPage);
+  }
+
+  recovery() {
+    this.navCtrl.push(RecPage);
+  }
+
+}

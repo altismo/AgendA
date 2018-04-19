@@ -6,31 +6,31 @@
 -->
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
+    <!--<button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
-    </button>
+    </button> -->
     <ion-title>Login</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content padding>
-<!--
+
   <ion-item>
     <ion-label floating>Email</ion-label>
     <ion-input type = "text" value = ""></ion-input>
   </ion-item>
   
   <ion-item>
-    <ion-label floating>Password</ion-label>
+    <ion-label floating>Senha</ion-label>
     <ion-input type="{{type}}" name="password" ngModel #password="ngModel" required pattern=".{4,10}"></ion-input>
     <button *ngIf="!showPass" ion-button clear color="dark" type="button" item-right (click)="showPassword()"> <ion-icon name="ios-eye-off-outline"></ion-icon></button>
     <button *ngIf="showPass" ion-button clear color="dark" type="button" item-right (click)="showPassword()"> <ion-icon name="ios-eye-outline"></ion-icon></button>
   
  </ion-item>
 
- <ion-content padding>
-
- <button ion-button clear >Primary Clear</button>
- -->
+<ion-content padding>
+   <br>
+   <button ion-button (click)="login()">ENTRAR</button>
+   <button ion-button clear (click)="recovery()">ESQUECI MINHA SENHA</button>
 </ion-content>
