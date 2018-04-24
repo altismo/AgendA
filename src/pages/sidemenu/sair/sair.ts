@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { Platform } from 'ionic-angular'; 
 import { StatusBar } from '@ionic-native/status-bar'
+import { InicioPage } from '../../inicio/inicio';
+import { PainelPage } from '../../sidemenu/painel/painel';
 /**
  * Generated class for the SairPage page.
  *
@@ -15,7 +17,19 @@ import { StatusBar } from '@ionic-native/status-bar'
   selector: 'page-sair',
   templateUrl: 'sair.html'
 })
-export class SairPage {
+  export class SairPage {
+  constructor(public navCtrl: NavController) {
+  }
+  OPENROOTinicio(){
+    this.navCtrl.setRoot(InicioPage);
+  }
+  openpainel(){
+    this.navCtrl.setRoot(PainelPage);
+  }
+  }
+
+
+/*export class SairPage {
   platform: any;
   constructor(public alertCtrl: AlertController) {}
     doConfirm(){
@@ -24,14 +38,15 @@ export class SairPage {
         buttons: [
           {
             text: 'Cancelar',
-            handler: () => {
-              console.log('Cancelar clicked');
+            handler: (clicked) => {
+              console.log('Continuar clicked');
               false;
             }
           },
           {
-            text: 'Continuar',
-            handler: () => {
+            text: 'simna',
+            role: 'cancel',
+            handler: (clicked) => {
               console.log('Continuar clicked');
               this.platform.exitApp();
             }
@@ -44,4 +59,6 @@ export class SairPage {
     console.log('ionViewDidLoad SairPage');
   }
 
-}
+}*/
+
+

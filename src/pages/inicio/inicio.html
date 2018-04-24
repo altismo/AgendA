@@ -6,9 +6,6 @@
 -->
 <ion-header>
   <ion-navbar>
-    <!--<button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button> -->
     <ion-title>Login</ion-title>
   </ion-navbar>
 
@@ -18,7 +15,7 @@
 
   <ion-item>
     <ion-label floating>Email</ion-label>
-    <ion-input type = "text" value = ""></ion-input>
+    <ion-input type = "email" value = ""></ion-input>
   </ion-item>
   
   <ion-item>
@@ -33,4 +30,5 @@
    <br>
    <button ion-button (click)="login()">ENTRAR</button>
    <button ion-button clear (click)="recovery()">ESQUECI MINHA SENHA</button>
+   <button ion-button clear (click)="cadastro()">CADASTRAR</button>
 </ion-content>

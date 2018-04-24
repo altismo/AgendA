@@ -11,6 +11,9 @@ import { PerfilPage } from '../pages/sidemenu/perfil/perfil';
 import { PainelPage } from '../pages/sidemenu/painel/painel';
 import { InicioPage } from '../pages/inicio/inicio';
 import { RecPage } from '../pages/esquecisenha/esquecisenha';
+import { NavController } from 'ionic-angular';
+import { setupPreloadingImplementation } from 'ionic-angular/util/module-loader';
+import {CadPage} from '../pages/cadastro/cadastro'
 
 @Component({
   templateUrl: 'app.html'

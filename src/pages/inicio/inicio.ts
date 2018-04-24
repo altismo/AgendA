@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PainelPage } from '../sidemenu/painel/painel';
 import { RecPage } from '../esquecisenha/esquecisenha';
+import {CadPage} from '../cadastro/cadastro'
 
 /**
  * Generated class for the InicioPage page.
@@ -40,11 +41,15 @@ export class InicioPage {
   }
 
   login() {
-    this.navCtrl.push(PainelPage);
+    this.navCtrl.setRoot(PainelPage);
   }
 
   recovery() {
     this.navCtrl.push(RecPage);
+  }
+
+  cadastro(){
+    this.navCtrl.push(CadPage);
   }
 
 }
