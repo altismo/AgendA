@@ -4,17 +4,16 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/eventos/home';
-import { ListPage } from '../pages/list/list';
+import { ListPage } from '../pages/teste/list';
 import { NgCalendarModule  } from 'ionic2-calendar';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ConfigPage } from '../pages/sidemenu/config/config';
-import { MeusPage } from '../pages/sidemenu/meus/meus';
+import { MeusPage } from '../pages/sidemenu/meusgrupos/meus';
 import { PerfilPage } from '../pages/sidemenu/perfil/perfil';
-import { PainelPage } from '../pages/sidemenu/painel/painel';
-import { SairPage } from '../pages/sidemenu/sair/sair';
-import { InicioPage } from '../pages/inicio/inicio';
+import { PainelPage } from '../pages/sidemenu/painelprincipal/painel';
+import { InicioPage } from '../pages/login/inicio';
 import { RecPage } from '../pages/esquecisenha/esquecisenha';
 
 @NgModule({
@@ -26,7 +25,6 @@ import { RecPage } from '../pages/esquecisenha/esquecisenha';
     MeusPage,
     PainelPage,
     PerfilPage,
-    SairPage,
     InicioPage,
     RecPage,
   ],
@@ -44,7 +42,6 @@ import { RecPage } from '../pages/esquecisenha/esquecisenha';
     MeusPage,
     PerfilPage,
     PainelPage,
-    SairPage,
     InicioPage,
     RecPage,
   ],

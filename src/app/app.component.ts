@@ -3,13 +3,12 @@ import { Nav, Platform, ToastController, Icon } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/eventos/home';
-import { ListPage } from '../pages/list/list';
+import { ListPage } from '../pages/teste/list';
 import { ConfigPage } from '../pages/sidemenu/config/config';
-import { SairPage } from '../pages/sidemenu/sair/sair';
-import { MeusPage } from '../pages/sidemenu/meus/meus';
+import { MeusPage } from '../pages/sidemenu/meusgrupos/meus';
 import { PerfilPage } from '../pages/sidemenu/perfil/perfil';
-import { PainelPage } from '../pages/sidemenu/painel/painel';
-import { InicioPage } from '../pages/inicio/inicio';
+import { PainelPage } from '../pages/sidemenu/painelprincipal/painel';
+import { InicioPage } from '../pages/login/inicio';
 import { RecPage } from '../pages/esquecisenha/esquecisenha';
 import { NavController } from 'ionic-angular';
 import { setupPreloadingImplementation } from 'ionic-angular/util/module-loader';
@@ -53,7 +52,6 @@ export class MyApp {
       { title: 'List', component: ListPage},
       { title: 'Meus grupos', component:MeusPage},
       { title: 'Configuração', component: ConfigPage},
-      { title: 'Sair', component: SairPage},
     ];
 
   }
