@@ -1,6 +1,15 @@
 // http://ionicframework.com/docs/theming/
-
-
+//$toolbar-background:#76EFD6; 
+.avatar  {
+    position: absolute;
+    top: 0% ;
+    right: 80%;
+    z-index: 150;
+    border: 1px solid rgb(238, 238, 238);
+}
+ion-toolbar{
+    background-image: url('/assets/imgs/fundinho.jpg');
+}
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
