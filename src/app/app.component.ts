@@ -12,7 +12,7 @@ import { InicioPage } from '../pages/login/inicio';
 import { RecPage } from '../pages/esquecisenha/esquecisenha';
 import { NavController } from 'ionic-angular';
 import { setupPreloadingImplementation } from 'ionic-angular/util/module-loader';
-import {CadPage} from '../pages/cadastro/cadastro'
+import { CadPage } from '../pages/cadastro/cadastro';
 
 @Component({
   templateUrl: 'app.html'
@@ -23,7 +23,7 @@ export class MyApp {
 
   rootPage: any = InicioPage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon:any}>;
   public 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, public toastCtrl: ToastController) {
     /*this.initializeApp();*/
@@ -46,12 +46,11 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Painel', component: PainelPage},
-      { title: 'Perfil', component: PerfilPage},
-      { title: 'Meus eventos', component: HomePage}, 
-      { title: 'List', component: ListPage},
-      { title: 'Meus grupos', component:MeusPage},
-      { title: 'Configuração', component: ConfigPage},
+      { title: 'Painel', component: PainelPage, icon:"contact"},
+      { title: 'Perfil', component: PerfilPage, icon:"person"},
+      { title: 'Meus eventos', component: HomePage, icon:"calendar"}, 
+      { title: 'Meus grupos', component:MeusPage,icon:"people"},
+      { title: 'Configuração', component: ConfigPage,icon:"build"},
     ];
 
   }
